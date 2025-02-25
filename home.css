@@ -56,6 +56,14 @@ section{
     width: 90%;
     max-width: 600px;
 }
+/* address */
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    color: blue;
+}
 /* contact information */
 .contact-info a {
     color: #004080;
@@ -63,11 +71,13 @@ section{
 }
 .contact-info a:hover {
     text-decoration: underline;
+    color: #007BFF;
 }
 /* contact Form */
 .contact-form form{
     display: flex;
     flex-direction: column;
+    color: #007BFF;
 }
 .contact-form label {
     margin-top: 1em;
@@ -99,4 +109,24 @@ section{
     section {
         width: 95%;
     }
+}
+
+/* social links */
+.social-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+.social-links li a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+.social-links li a:hover img {
+    transform: scale(1.4);
+    
 }
