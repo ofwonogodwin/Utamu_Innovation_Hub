@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <title>contact us - Utamu Innovation Hub</title>
+
+    <link rel="stylesheet" href="home.css" />
+
 </head>
 <body>
-    
+    <header>
+        <h1>Contact Us</h1>
+        <p>
+            We'd love to here to haer from you! Reach out to learn more about our innovation hub.
+        </p>
+        <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </nav>
+        
+    </header>
+    <section class="contact-info">
+        <h2>Our Contact Information</h2>
+        <p>Email: <a href="mailto:utamuinnovationhub@gmail.com">utamuinnovationhub@gmail.com</a></p>
+        <p>Phone: <a href="tel: +256704376894"> (256) 704-376894</a></p>
+        <p>Phone: <a href="tel: +256701792691"> (256) 701-792691</a></p>
+        <p>Phone: <a href="tel: +256757013189"> (256) 757-013189</a></p>
+        <p>address:</p>
+    </section>
+    <section class="contact-form">
+        <h2>Send us a Message</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="name" name="message" rows="6" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+
+    </section>
+    <footer>
+        <H4>&copy; 2025 UTAMU Innovation Hub. All rights reserved.</H4>
+    </footer>
 </body>
 </html>

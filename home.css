@@ -50,4 +50,53 @@ nav ul li a:hover {
 .hero h2 {
     margin: 0;
 }
+/* section styling */
+section{
+    margin: 2em auto;
+    width: 90%;
+    max-width: 600px;
+}
+/* contact information */
+.contact-info a {
+    color: #004080;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+/* contact Form */
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    margin-top: 1em;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea{
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 
+}
+.contact-form button{
+    margin-top: 1.5em;
+    padding: 0.75em;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form button :hover{
+    background-color: #575757;
+}
+/* responsive design */
+@media ( max-width: 600px) {
+    section {
+        width: 95%;
+    }
+}
