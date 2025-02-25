@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #030b33;
+    color: white;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav ul {
+    font-size: larger;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #04083b;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+/* Hero Section */
+.hero {
+
+    background: url('https://source.unsplash.com/1600x600/?university,students') no-repeat center center/cover;
+    color: rgb(12, 1, 1);
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
