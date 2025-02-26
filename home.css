@@ -131,3 +131,101 @@ nav ul li a:hover, nav ul li a.active {
     background: #3498db;
     border-radius: 5px;
 }
+
+
+/* About Section */
+/* Hero Section Styles */
+.hero {
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); /* Cool gradient */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    color: #f9f9f9;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+/* Cool background effect */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    z-index: 0;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent white card */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+    transform: translateY(20px); /* Slight lift for depth */
+}
+
+.hero-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.hero-logo:hover {
+    transform: rotate(360deg); /* Cool spin on hover */
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 1rem 0;
+    line-height: 1.8;
+    opacity: 0; /* Start hidden for fade-in */
+    transform: translateY(20px); /* Slide up effect */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hero p.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Adjust for fixed nav */
+.hero {
+    margin-top: 80px; /* Match or exceed nav height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+    .hero-content {
+        padding: 1.5rem;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
