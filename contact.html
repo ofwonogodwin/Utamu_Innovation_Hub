@@ -3,54 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/logo.jpg" type="image/jpg">
-    <title>contact us - Utamu Innovation Hub</title>
-
-    <link rel="stylesheet" href="home.css" />
-
+    <title>Contact Us - Utamu Innovation Hub</title>
+    <link rel="stylesheet" href="/styles/contact.css">
 </head>
 <body>
-    <!-- The Header Section -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Utamu Logo">
+            <span>Utamu Innovation Hub</span>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Contact Us</h1>
-        <p>
-            We'd love to here to hear from you! Reach out to learn more about utamu innovation hub.
-        </p>
-        <nav>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="projects.html">Projects</a></li>
-            </ul>
-          </nav>
-        
+        <p>We'd love to hear from you! Reach out to learn more about Utamu Innovation Hub.</p>
     </header>
-    <!-- Contact Information -->
+
     <section class="contact-info">
         <h2>Our Contact Information</h2>
         <p>Email: <a href="mailto:utamuinnovationhub@gmail.com">utamuinnovationhub@gmail.com</a></p>
-        <p>Phone: <a href="tel: +256704376894"> (256) 704-376894</a></p>
-        <p>Phone: <a href="tel: +256701792691"> (256) 701-792691</a></p>
-        <p>Phone: <a href="tel: +256757013189"> (256) 757-013189</a></p>
-        
-        <p class="address">Plot 8374 kungu Main Campus, Kigogwa Matugga;<br>
+        <p>Phone: <a href="tel:+256704376894">(256) 704-376894</a></p>
+        <p>Phone: <a href="tel:+256701792691">(256) 701-792691</a></p>
+        <p>Phone: <a href="tel:+256757013189">(256) 757-013189</a></p>
+        <p class="address">Plot 8374 Kungu Main Campus, Kigogwa Matugga;<br>
             P.O. Box 73307 Wakiso, Uganda.
         </p>
     </section>
-    <!-- Social Media Links -->
+
     <h3>Connect with us on Social Media</h3>
     <ul class="social-links">
-       
-        <li><a href="https://twitter.com/utamuinnovation" target="_blank"><img src="images/xlogo.jpeg" alt="Twitter"</a></li>
-        <li><a href="https://www.facebook.com/utamuinnovationhub" target="_blank"><img src="images/facebook.jpg" alt="facebook"</a></li>
-        <li><a href="https://www.linkedin.com/company/utamuinnovationhub" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"</a></li>
-        <li><a href="https://www.github.com/utamuinnovationhub" target="_blank"><img src="images/github.png" alt="github"</a></li>
+        <li><a href="https://twitter.com/utamuinnovation" target="_blank"><img src="images/xlogo.jpeg" alt="Twitter"></a></li>
+        <li><a href="https://www.facebook.com/utamuinnovationhub" target="_blank"><img src="images/facebook.jpg" alt="Facebook"></a></li>
+        <li><a href="https://www.linkedin.com/company/utamuinnovationhub" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+        <li><a href="https://www.github.com/utamuinnovationhub" target="_blank"><img src="images/github.png" alt="GitHub"></a></li>
     </ul>
-    <!-- Contact form -->
+
     <section class="contact-form">
         <h2>Send us a Message</h2>
-        <form action="#" method="">
+        <form id="contactForm">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
 
@@ -61,15 +57,16 @@
             <input type="text" id="subject" name="subject" required>
 
             <label for="message">Message</label>
-            <textarea id="name" name="message" rows="6" required></textarea>
+            <textarea id="message" name="message" rows="6" required></textarea>
             
             <button type="submit">Send Message</button>
         </form>
-
     </section>
-    <!-- Footer Section -->
+
     <footer>
-        <H4>&copy; 2025 UTAMU Innovation Hub. All rights reserved.</H4>
+        <p>© 2025 UTAMU Innovation Hub. All rights reserved.</p>
     </footer>
+
+    <script src="contact.js"></script>
 </body>
 </html>
