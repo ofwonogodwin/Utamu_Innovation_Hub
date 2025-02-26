@@ -38,7 +38,43 @@ nav ul li a {
 nav ul li a:hover {
     background: #575757;
 }*
+nav {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: #3498db;
+    border-radius: 5px;
+}
 /* Hero Section */
 .hero {
 
@@ -56,4 +92,42 @@ section{
     width: 90%;
     max-width: 700px;
     
+}
+/*navigation styling */
+nav {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: #3498db;
+    border-radius: 5px;
 }
