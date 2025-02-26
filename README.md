@@ -5,4 +5,4 @@
 We Offer Tech Incubation by supporting startups with mentorship and resources, Training Bootcamps which are hands-on sessions for skill development in software, cybersecurity, AI and others, Events & Competitions like Hackathons, meetups and cybersecurity competitions etc .
 
 ### Utamu Innovation Hub Logo
-<img src="https://github.com/user-attachments/assets/6350c6d4-35fa-4b93-9133-1846f5b44dbf" alt="Utamu Innovation Hub Logo" width="150" height="150">
+<img src="images/logo.jpg" alt="Utamu Innovation Hub Logo" width="150" height="150">
