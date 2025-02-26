@@ -55,11 +55,13 @@ nav ul li a {
     color: #f9f9f9;
     font-weight: 500;
     transition: color 0.3s ease;
+    padding: 8px 15px;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #e74c3c;
+    background: #3498db;
+    border-radius: 5px;
 }
 
 
@@ -134,7 +136,7 @@ h3 {
 }
 
 .social-links img:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 /* Contact Form Styles */
