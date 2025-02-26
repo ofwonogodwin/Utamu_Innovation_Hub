@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const paragraphs = document.querySelectorAll('.hero p.fade-in');
     paragraphs.forEach((p, index) => {
-        const delay = p.getAttribute('data-delay') * 300; // 300ms stagger
+        const delay = p.getAttribute('data-delay') * 400; // 400ms stagger
         setTimeout(() => {
             p.classList.add('visible');
         }, delay);
