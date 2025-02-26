@@ -54,7 +54,8 @@ nav ul li a:hover {
 section{
     margin: 2em auto;
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
+    
 }
 /* address */
 .address {
