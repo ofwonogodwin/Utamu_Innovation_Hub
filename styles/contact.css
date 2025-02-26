@@ -14,8 +14,7 @@ body {
 /* Navigation Styles */
 nav {
     background: #2c3e50;
-   /* padding: 1rem 2rem;*/
-    padding: 15px 20px;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,21 +62,22 @@ nav ul li a.active {
     color: #e74c3c;
 }
 
+
 /* Header Styles */
-header {
+.header {
     margin-top: 100px; /* Space for fixed nav */
     text-align: center;
     padding: 3rem 2rem;
     background: #ecf0f1;
 }
 
-header h1 {
+.header h1 {
     font-size: 2.5rem;
     color: #2c3e50;
     margin-bottom: 1rem;
 }
 
-header p {
+.header p {
     font-size: 1.2rem;
     color: #7f8c8d;
 }
