@@ -6,6 +6,10 @@ body {
 }
 
 nav {
+    position:fixed;
+    top: 0;
+    left: 10;
+    width: 100%;
     background: #2c3e50;
     color: white;
     padding: 15px 20px;
@@ -24,7 +28,9 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    margin-right: 30px;
 }
+
 
 nav ul li {
     margin: 0 15px;
