@@ -23,7 +23,7 @@
             <ul>
               <li><a href="home.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html" class="active">Contact</a></li>
               <li><a href="projects.html">Projects</a></li>
             </ul>
           </nav>
@@ -51,27 +51,29 @@
     <!-- Contact form -->
     <section class="contact-form">
         <h2>Send us a Message</h2>
-        <form id="contactForm">
+        <form id="contactForm" name ="submit-to-google-sheet">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="Name" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="Email" required>
 
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
+            <input type="text" id="subject" name="Subject" required>
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <textarea id="message" name="Message" rows="6" required></textarea>
             
             <button type="submit">Send Message</button>
         </form>
+        <p id="success_message"></p>
     </section>
 
     <footer>
         <H4>&copy; 2025 UTAMU Innovation Hub. All rights reserved.</H4>
     </footer>
 
-    <script src="contact.js"></script>
+    <!--<script src="contact.js"></script>-->
+    <script src="index.JS"></script>
 </body>
 </html>
