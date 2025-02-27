@@ -9,9 +9,9 @@ form.addEventListener('submit', e => {
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => response.text()) // here we're getting the form data and converting them to text
         .then(data => {
+            form.reset(); // reset form after successful submission
             message.innerText = "Message sent successfully!";
             message.style.color = "green";
-            form.reset(); // reset form after successful submission
             setTimeout(() => {
                 message.innerHTML = "";},2000); // Show success message for 2 seconds
         })

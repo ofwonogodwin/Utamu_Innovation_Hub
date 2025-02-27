@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +14,9 @@ body {
 
 
 
-/* Header Styles */
+/* Header Styles 
 header {
-    margin-top: 100px; /* Space for fixed nav */
+    margin-top: 100px; /* Space for fixed nav 
     text-align: center;
     padding: 3rem 2rem;
     background: #ecf0f1;
@@ -32,7 +33,7 @@ header p {
     color: #7f8c8d;
 }
 
-/* Contact Info Styles */
+/* Contact Info Styles 
 .contact-info {
     max-width: 800px;
     margin: 2rem auto;
@@ -61,7 +62,7 @@ header p {
     text-decoration: underline;
 }
 
-/* Social Links Styles */
+/* Social Links Styles 
 h3 {
     text-align: center;
     color: #2c3e50;
@@ -87,7 +88,7 @@ h3 {
     transform: scale(1.4);
 }
 
-/* Contact Form Styles */
+/* Contact Form Styles 
 .contact-form {
     max-width: 800px;
     margin: 0 auto 3rem;
@@ -143,37 +144,5 @@ h3 {
 
 .contact-form button:hover {
     background: #c0392b;
-}
+}*/
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 2rem;
-    background: #2c3e50;
-    color: white;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-       /* padding: 1rem;*/
-    }
-
-    nav ul {
-        margin-top: 1rem;
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .contact-info,
-    .contact-form {
-        margin: 1rem;
-        padding: 1rem;
-    }
-}

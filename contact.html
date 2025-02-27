@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="icon" href="images/logo.jpg" type="image/jpg">
-    <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://kit.fontawesome.com/e5ff8bc16b.js" crossorigin="anonymous"></script>
+</head>
 </head>
 
 <body>
@@ -19,12 +20,14 @@
                 <span>Utamu Innovation Hub</span>
             </div>
             
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
+                <i class ="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class ="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <header>
             <h1>Contact Us</h1>
@@ -83,6 +86,16 @@
 
     <!--<script src="contact.js"></script>-->
     <script src="index.JS"></script>
+    <script>
+        var menu= document.getElementById("menu");
+    
+        function openmenu(){
+            menu.style.right="0";
+        }
+        function closemenu(){
+            menu.style.right="-200px";
+        }
+      </script>
 </body>
 
 </html>

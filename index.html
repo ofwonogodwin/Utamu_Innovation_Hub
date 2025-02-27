@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/projects.css" />
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://kit.fontawesome.com/e5ff8bc16b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
@@ -16,12 +17,14 @@
         <span>Utamu Innovation Hub</span>
       </div>
 
-      <ul>
+      <ul id="menu">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <i class ="fas fa-times" onclick="closemenu()"></i>
       </ul>
+      <i class ="fas fa-bars" onclick="openmenu()"></i>
     </nav>
 
     <!-- Main Content Section -->
@@ -52,6 +55,17 @@
     <footer>
       <p>&copy; 2025 UTAMU Innovation Hub. All rights reserved.</p>
     </footer>
+    <script src="home.js"></script>
+    <script>
+      var menu= document.getElementById("menu");
+  
+      function openmenu(){
+          menu.style.right="0";
+      }
+      function closemenu(){
+          menu.style.right="-200px";
+      }
+    </script>
   </body>
 </html>
-<script src="home.js"></script>
+

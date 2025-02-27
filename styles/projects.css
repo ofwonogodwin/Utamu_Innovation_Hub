@@ -34,6 +34,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    margin-right: 25px;
 }
 
 nav ul li a {
@@ -48,8 +49,6 @@ nav ul li a:hover, nav ul li a.active {
     background: #3498db;
     border-radius: 5px;
 }
-
-
 header {
     text-align: center;
     background: linear-gradient(to right, #3498db, #2c3e50);
@@ -154,4 +153,79 @@ footer {
     padding: 15px;
     background: #2c3e50;
     color: white;
+}
+nav .fas{
+    display:none;
+}
+
+@media only screen and (max-width: 780px) {
+    /* nav styles for all pages*/
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        background: #2c3e50;
+        position: relative;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 40px;
+        margin-left: 0;
+        display: block;
+    }
+
+    .logo span {
+        font-size: 12px;
+        margin-right: 35px;
+        color: white;
+    }
+
+    /* Menu icon (hamburger) */
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        top: 20px;  
+        right: 20px; 
+        cursor: pointer;
+        z-index: 3;
+        color: white;
+    }
+
+    /* Mobile menu (sidebar) */
+    nav ul {
+        display:block;
+        background: #2c3e50;
+        position: fixed;
+        top: 0;
+        right: -210px;
+        width: 150px;
+        height: 100vh; /* Full screen height */
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s ease-in-out;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    /* Close icon inside the menu */
+    nav ul .fas {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        cursor: pointer;
+        color: white;
+    }
 }

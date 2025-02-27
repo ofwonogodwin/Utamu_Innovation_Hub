@@ -6,6 +6,7 @@
     <link rel="icon" href="images/logo.jpg" type="image/jpg">
     <title>Our Projects</title>
     <link rel="stylesheet" href="styles/projects.css">
+    <script src="https://kit.fontawesome.com/e5ff8bc16b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -15,12 +16,14 @@
             <span>Utamu Innovation Hub</span>
         </div>
         
-        <ul>
+        <ul id="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <i class ="fas fa-times" onclick="closemenu()"></i>
         </ul>
+        <i class ="fas fa-bars" onclick="openmenu()"></i>
     </nav>
     
 
@@ -76,5 +79,15 @@
     <footer>
         <p>&copy; 2025 Utamu Innovation Hub. All rights reserved.</p>
     </footer>
+    <script>
+        var menu= document.getElementById("menu");
+    
+        function openmenu(){
+            menu.style.right="0";
+        }
+        function closemenu(){
+            menu.style.right="-200px";
+        }
+      </script>
 </body>
 </html>

@@ -1,4 +1,211 @@
-/* About Section */
+/*This is the styles for the css which all pages will use for uniformity  */
+nav {
+    position:fixed;
+    top: 0;
+    left: 10;
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 30px;
+}
+
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: #3498db;
+    border-radius: 5px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; 
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%; 
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+/* styles for the contact us page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    margin-top: 100px; 
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #ecf0f1;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-info h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    margin: 0.8rem 0;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Social Links Styles */
+h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 2rem 0 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.4);
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-form label {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #e74c3c;
+}
+
+.contact-form button {
+    padding: 0.8rem;
+    background: #5489eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.contact-form button:hover {
+    background: #c0392b;
+}
+
+/* styles for the About Section */
 /* Hero Section Styles */
 .hero {
     min-height: 100vh; /* Full viewport height */
@@ -81,7 +288,7 @@
     margin-top: 80px; /* Match or exceed nav height */
 }
 
-/* Responsive Design */
+/* Responsive Design for about section */
 @media (max-width: 768px) {
     .hero {
         padding: 2rem 1rem;
@@ -96,3 +303,231 @@
         font-size: 1rem;
     }
 }
+
+nav .fas{
+    display:none;
+}
+/* The styling for small screens*/
+    @media only screen and (max-width: 780px) {
+        /* nav styles for all pages*/
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            background: #2c3e50;
+            position: relative;
+        }
+    
+        .logo {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-left: 10px;
+        }
+    
+        .logo img {
+            width: 30px;
+            height: 40px;
+            margin-left: 0;
+            display: block;
+        }
+    
+        .logo span {
+            font-size: 12px;
+            margin-right: 35px;
+            color: white;
+        }
+    
+        /* Menu icon (hamburger) */
+        nav .fas {
+            display: block;
+            font-size: 25px;
+            position: absolute;
+            top: 20px;  
+            right: 20px; 
+            cursor: pointer;
+            z-index: 3;
+            color: white;
+        }
+    
+        /* Mobile menu (sidebar) */
+        nav ul {
+            display:block;
+            background: #2c3e50;
+            position: fixed;
+            top: 0;
+            right: -210px;
+            width: 150px;
+            height: 100vh; /* Full screen height */
+            padding-top: 50px;
+            z-index: 2;
+            transition: right 0.5s ease-in-out;
+        }
+    
+        nav ul li {
+            display: block;
+            margin: 25px;
+        }
+    
+        /* Close icon inside the menu */
+        nav ul .fas {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* Small screen styles for the rest of the parts of contact us page*/
+
+        header {
+            margin-top: 0; /* Space for fixed nav */
+            text-align: center;
+            padding: 0.5rem 0.5rem;
+            background: #ecf0f1;
+        }
+        
+        header h1 {
+            font-size: 1rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        header p {
+            font-size: 0.6rem;
+            color: #7f8c8d;
+        }
+        /* Contact Info Styles */
+        .contact-info {
+            max-width: 300px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h2 {
+            color: #2c3e50;
+            margin-bottom: .5rem;
+            font-size: 8px;
+        }
+
+        .contact-info p {
+            margin: 0.6rem 0;
+            font-size: 0.5rem;
+        }
+
+        .contact-info a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        /* Social Links Styles */
+        h3 {
+            text-align: center;
+            font-size: 12px;
+            color: #2c3e50;
+            margin: 0.5rem 0 1rem;
+            margin-right: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            list-style: none;       
+            margin-bottom: 1rem;
+        }
+
+        .social-links img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            margin-right: 20px;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.4);
+        }
+        /* Contact Form Styles */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            margin-left: 1rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact-form h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 12px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .contact-form label {
+            font-weight: 500;
+            color: #2c3e50;
+            font-size: 12px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 90%;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #e74c3c;
+        }
+
+        .contact-form button {
+            padding: 0.8rem;
+            background: #5489eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.6rem;
+            transition: background 0.3s ease;
+            max-width: 150px;
+            margin: 0 auto;
+        }
+
+        .contact-form button:hover {
+            background: #c0392b;
+        }
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+        }
+
+        H4 {
+            font-size: 8px;
+            margin-right: 10px;
+        }
+
+
+    }
+    
