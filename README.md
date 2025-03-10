@@ -1,4 +1,4 @@
-# Utamu Innovation Hub
+# Utamu Innovation Hub (School Club)
 
 **Utamu Innovation Hub** is a platform designed to foster innovation, entrepreneurship and technological advancement.<br> Our hub serves as a center for learning, collaboration and the development of groundbreaking projects in the tech ecosystem.
 
