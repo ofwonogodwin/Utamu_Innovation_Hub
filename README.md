@@ -10,3 +10,6 @@ UTAMU
 
 ### Utamu Innovation Hub Logo
 <img src="images/logo.jpg" alt="Utamu Innovation Hub Logo" width="150" height="150">
+
+### U Wanna Contribute, 
+Contact us
