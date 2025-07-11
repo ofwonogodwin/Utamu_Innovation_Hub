@@ -13,29 +13,29 @@
 
 <body>
     <!-- The Header Section -->
-    
-        <nav>
-            <div class="logo">
-                <img src="images/logo.jpg" alt="Utamu innovation hub Logo">
-                <span>Utamu Innovation Hub</span>
-            </div>
-            
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <i class ="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class ="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <header>
-            <h1>Contact Us</h1>
-            <p>
-                We'd love  to hear from you! Reach out to learn more about utamu innovation hub.
-            </p>
-        
-        </header>
+
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Utamu innovation hub Logo">
+            <span>Utamu Innovation Hub</span>
+        </div>
+
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <header>
+        <h1>Contact Us</h1>
+        <p>
+            We'd love to hear from you! Reach out to learn more about utamu innovation hub.
+        </p>
+
+    </header>
     <!-- Contact Information -->
     <section class="contact-info">
         <h2>Our Contact Information</h2>
@@ -54,7 +54,7 @@
                     alt="Twitter"></a></li>
         <li><a href="https://www.facebook.com/utamuinnovationhub" target="_blank"><img src="images/facebook.jpg"
                     alt="Facebook"></a></li>
-        <li><a href="https://www.linkedin.com/company/utamuinnovationhub" target="_blank"><img src="images/linkedin.png"
+        <li><a href="https://utamuinnovationclub.vercel.app/" target="_blank"><img src="images/linkedin.png"
                     alt="LinkedIn"></a></li>
         <li><a href="https://www.github.com/utamuinnovationhub" target="_blank"><img src="images/github.png"
                     alt="GitHub"></a></li>
@@ -62,7 +62,7 @@
     <!-- Contact form -->
     <section class="contact-form">
         <h2>Send us a Message</h2>
-        <form id="contactForm" name ="submit-to-google-sheet">
+        <form id="contactForm" name="submit-to-google-sheet">
             <label for="name">Name</label>
             <input type="text" id="name" name="Name" required>
 
@@ -74,7 +74,7 @@
 
             <label for="message">Message</label>
             <textarea id="message" name="Message" rows="6" required></textarea>
-            
+
             <button type="submit">Send Message</button>
         </form>
         <p id="success_message"></p>
@@ -87,15 +87,15 @@
     <!--<script src="contact.js"></script>-->
     <script src="index.JS"></script>
     <script>
-        var menu= document.getElementById("menu");
-    
-        function openmenu(){
-            menu.style.right="0";
+        var menu = document.getElementById("menu");
+
+        function openmenu() {
+            menu.style.right = "0";
         }
-        function closemenu(){
-            menu.style.right="-200px";
+        function closemenu() {
+            menu.style.right = "-200px";
         }
-      </script>
+    </script>
 </body>
 
 </html>
